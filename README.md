@@ -1,6 +1,7 @@
 📝 Blogging App with Spring Boot and React.js
 📖 Overview
-This project is a simple Blogging Application built using Spring Boot for the backend and React.js for the frontend. It provides features for users to create, edit, delete, and view blog posts with secure authentication using JWT.
+This project is a simple Blogging Application built using Spring Boot for the backend and React.js for the frontend. 
+It provides features for users to create, edit, delete, and view blog posts with secure authentication using JWT.
 
 ⚙️ Tech Stack
 Backend: Spring Boot, Java, MySQL, JWT Authentication
