@@ -1,4 +1,4 @@
-# 📝 Blogging App with Spring Boot and React.js  
+# 📝 Blogging Web App with Spring Boot and React.js  
 
 ## 📖 Overview  
 This project is a simple Blogging Application built using Spring Boot for the backend and React.js for the frontend. 
