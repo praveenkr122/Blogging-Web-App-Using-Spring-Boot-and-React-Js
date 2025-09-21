@@ -1,8 +1,14 @@
-spring.application.name=blog_application
-spring.datasource.url=jdbc:mysql://root:fERibCWuogPiZsPVLjVNZTPIfbOuwrGf@mysql.railway.internal:3306/railway
-spring.datasource.username=root
-spring.datasource.password=fERibCWuogPiZsPVLjVNZTPIfbOuwrGf
+# Activate the prod profile (often set via env var on the platform)
+spring.profiles.active=prod
+
+# Database Configuration - Using Environment Variables
+spring.datasource.url=${JDBC_DATABASE_URL:jdbc:mysql://localhost:3306/blogdb}
+spring.datasource.username=${DB_USERNAME:root}
+spring.datasource.password=${DB_PASSWORD}
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
+# JPA Settings
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=update
+# Use 'validate' or 'none' for production instead of 'update' for safety
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=false
