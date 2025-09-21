@@ -1,35 +1,39 @@
 package com.example.jwt.DTO;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
-@AllArgsConstructor
 public class JwtResponse {
     private String token;
     private Long userId;
-    
+
+    // No-args constructor
+    public JwtResponse() {
+    }
+
+    // All-args constructor
     public JwtResponse(String token, Long userId) {
         this.token = token;
         this.userId = userId;
     }
 
-	public String getToken() {
-		return token;
-	}
+    // Constructor with only token
+    public JwtResponse(String token) {
+        this.token = token;
+    }
 
-	public JwtResponse(String token) {
-		super();
-		this.token = token;
-	}
+    // Getters and setters
+    public String getToken() {
+        return token;
+    }
 
-	public void setToken(String token) {
-		this.token = token;
-	}
-	
-	public Long getUserId() {
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public Long getUserId() {
         return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }
